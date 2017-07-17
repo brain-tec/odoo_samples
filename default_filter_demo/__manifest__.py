@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "user_access_rights_module_demo",
+    'name': "default_filter_demo",
 
     'summary': """
-        This demo module shows you how to create user access rights for a module (under Settings > Users)""",
+        A demo showing you how to add quick filters""",
 
     'description': """
-        LThis demo module shows you how to create user access rights for a module (under Settings > Users)
+        A demo showing you how to add quick filters
     """,
 
     'author': "Yenthe Van Ginneken",
@@ -19,12 +19,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['sale'],
 
     # always loaded
     'data': [
-        'security/user_groups.xml',
-	'security/ir.model.access.csv',
-	'views/user_access_views.xml'
-    ],
+        'views/quotation_search.xml',
+    ]
 }

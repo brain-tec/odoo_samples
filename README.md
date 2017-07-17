@@ -9,6 +9,10 @@ All Python (model data) is under models/button_action_demo.py and you can find t
 <h3>Module default_data_demo</h3>
 This module will learn you how to automatically insert default data in to a database. It will create a new model (demo.default.data) which is filled with records that are made in the file defaultdata.xml (under data/ folder).
 
+<h3>Module default_filter_demo</h3>
+This module will learn you how to add filters on search views.
+It'll allow you to filter on a specific field by simply using the filter from the searchview.
+
 <h3>Module inherit_report_demo</h3>
 This module will learn you how to inherit existing QWeb reports and how to modify them.
 In this example I will modify the default quotation/order report and only show the description with the total price.
@@ -17,6 +21,14 @@ To make it look a bit better I've added a table header color.
 <h3>Module logging_demo</h3>
 This module will learn you how to create log statements in Odoo. You can use these log statements to debug values
 or to write unusual behaviour to the Odoo logfile.
+
+<h3>Module mail_template_demo</h3>
+This module will learn you how to create e-mail templates in Odoo.
+It will add a new e-mail template for the model ```res.partner``` and will learn you the basic concepts of e-mail templates and jinja2 rendering.
+
+<h3>Module send_mail_template_demo</h3>
+This module will learn you how to send out e-mail templates from Python code.
+In this example we'll add a send e-mail button. After clicking on it the e-mail template that we created in the module mail_template_demo will be used to send out an e-mail.
 
 <h3>Module many2many_default_data_demo</h3>
 This module is a new module from scratch that inherits sale.order. It will create a new many2many to the model sale.order.printorder and will automatically fill this many2many with all the data from the model sale.order.printorder.
@@ -88,6 +100,9 @@ This module will learn you how to create a statusbar (selection) and how to hand
 
 <h3>Module upload_images</h3>
 This module is a new module, from scratch, which creates a new model (upload_images.tutorial), a new report (report_images.xml) and a new menu_item named 'Images' under Sales. In this new menu item you can upload images in multiple sizes and you will see a new report detail here. With this report you will see the image printed in multiple sizes.
+
+<h3>Module user_access_rights_demo</h3>
+This module creates a new security selection on the user settings. This allows you to add users to groups under Settings > Users and gives you the ability to show views and fields only to specific user groups.
 
 <h3>Module web_widget_color</h3>
 This module adds a colour picker widget to Odoo. The picker itself is inspired on the <a href="http://jscolor.com">jsColor </a> library.
